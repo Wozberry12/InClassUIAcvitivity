@@ -17,6 +17,9 @@ class MainActivity : AppCompatActivity() {
         // Step 1: Populate array
         val numberArray = IntArray(100)
 
+        for(i in 0..numberArray.size){
+            numberArray[i] = i;
+        }
         spinner.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, numberArray.asList())
 
 
